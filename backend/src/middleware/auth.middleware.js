@@ -1,4 +1,4 @@
-import { clerkClient, EmailAddress } from "@clerk/express";
+import { clerkClient } from "@clerk/express";
 
 export const requireAuth = async (req, res, next) =>{
     if (!req.auth.userId){
